@@ -3,18 +3,102 @@
 <head>
   <meta charset="UTF-8" />
   <title>Guerilla Plates - Weekly Menu</title>
-  <!-- Optional link to external CSS (styles.css) -->
-  <link rel="stylesheet" href="styles.css" />
+  <!-- Ensures the page scales nicely on mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+      margin: 0; 
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      color: #333;
+      line-height: 1.4;
+    }
+    .container {
+      max-width: 600px; /* So it doesn’t look too wide on desktops */
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+
+    /* Header styles */
+    header {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      font-family: Georgia, serif;
+      font-size: 1.8rem;
+      margin-bottom: 0.25rem;
+    }
+    header h2 {
+      font-size: 1.2rem;
+      color: #777;
+      margin-bottom: 0.5rem;
+    }
+    .contact-info {
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+
+    /* Menu area */
+    .menu h3 {
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 0.5rem 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0.5rem;
+    }
+    td {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #eaeaea;
+    }
+    /* Make days bold so they're easier to distinguish */
+    td:first-child {
+      font-weight: bold;
+      width: 40%;
+    }
+
+    /* Small screen adjustments (if needed) */
+    @media (max-width: 480px) {
+      .container {
+        padding: 1rem;
+      }
+      header h1 {
+        font-size: 1.5rem;
+      }
+      header h2 {
+        font-size: 1rem;
+      }
+      .menu h3 {
+        font-size: 0.95rem;
+      }
+      td {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
 </head>
 <body>
 
   <div class="container">
     <header>
       <h2>South Highlands</h2>
-      <h1>guerilla plates</h1>
-      <p>text <strong>903-471-8125</strong><br/>
-         deliveries <strong>6-9pm</strong> mon-fri
-      </p>
+      <h1>Guerilla Plates</h1>
+      <div class="contact-info">
+        text <strong>903-471-8125</strong><br/>
+        deliveries <strong>6-9pm</strong> mon-fri
+      </div>
     </header>
 
     <section class="menu">
